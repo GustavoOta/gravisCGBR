@@ -47,7 +47,7 @@ async fn main() -> std::io::Result<()> {
 #[get["/"]]
 async fn home() -> impl Responder {
     HttpResponse::Ok().body(
-        "Gravis - Sistemas de Gestao Comercial ERP - CNPJ: 10.868.122/0001-58".to_string()
+        "Gravis CGBR - Sistemas de Gestao Comercial ERP - CNPJ: 10.868.122/0001-58".to_string()
             + " - Versao: "
             + VERSION,
     )
