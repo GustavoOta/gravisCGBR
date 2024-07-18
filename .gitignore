@@ -1,0 +1,16 @@
+# Arquivos compilados
+/target/
+
+# Arquivos de log
+**/*.log
+
+# Arquivos de ambiente (como .env)
+.env
+
+# Arquivos de configuração do editor específicos do usuário
+.vscode/
+*.swp
+*~
+
+# Arquivos de sistema específicos do MacOS
+.DS_Store
