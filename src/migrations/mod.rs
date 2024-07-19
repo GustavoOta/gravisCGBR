@@ -1,3 +1,3 @@
 pub async fn exec() {
-    println!("Tests executed");
+    // ********************* DATABASE MIGRATIONS ********************* //
 }
