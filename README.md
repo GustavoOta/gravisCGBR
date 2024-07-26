@@ -1,5 +1,10 @@
 # gravisCGBR
-API de comunicação com serviços do governo Brasileiro
+API de comunicação com serviços do governo Brasileiro (Em desenvolvimento). Em "Objetivos" consulte a lista de recursos.
+
+## Download e Teste
+Você pode baixar o binário da aplicação em /target/release. Após o download, edite o arquivo `config.json` conforme descrito abaixo. Em seguida, execute o binário para iniciar a aplicação e testar a API.
+
+Se preferir baixar o código fonte, use a ferramenta `cargo` do `Rust`.
 
 ## Configuração
 
@@ -106,4 +111,11 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
     }
 }
 ```
+## Objetivos para o Desenvolvimento da Aplicação
 
+**Emissão de CF-e-SAT: (DEV)**
+**Emissão de NF-e e NFC-e: (Pendente)**
+**Manifestação de NF-e's (Pendente)**
+**Gerar PDF's e XML's(Pendente)**
+**Enviar arquivos Fiscais via Email (Pendente)**
+**Sincronizar arquivos (Pendente)**
