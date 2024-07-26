@@ -62,23 +62,7 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
             }
 }
 ```
-- **URL**: `http://localhost:3030/sat/consultar_sat`
-- **Método**: `GET`
-- **Descrição**: Este endpoint consulta o status do equipamento SAT.
-
-#### Exemplo de Resposta
-```json
-{
-    "error": 0,
-    "code": 0,
-    "msg": "Sucesso ao consultar equipamento SAT",
-    "data": {
-        "numero_sessao": 473295,
-        "cod_retorno": 8000,
-        "mensagem": "SAT em operação"
-    }
-}
-```
+### Consultar Status Operacional
 
 - **URL**: `http://localhost:3030/sat/consultar_status_operacional`
 - **Método**: `GET`
