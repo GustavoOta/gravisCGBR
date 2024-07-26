@@ -1,8 +1,9 @@
 # Ignorar tudo dentro do diretório target
 /target/*
 
-# Exceto arquivos sem extensão (binários)
+# Exceto arquivos binários específicos
 !/target/debug/gravisCgbr.exe
+!/target/release/gravisCgbr.exe
 
 # Arquivos lock
 cargo.lock
