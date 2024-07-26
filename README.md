@@ -113,9 +113,9 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
 ```
 ## Objetivos para o Desenvolvimento da Aplicação
 
-**Emissão de CF-e-SAT: (DEV)**
-**Emissão de NF-e e NFC-e: (Pendente)**
-**Manifestação de NF-e's (Pendente)**
-**Gerar PDF's e XML's(Pendente)**
-**Enviar arquivos Fiscais via Email (Pendente)**
-**Sincronizar arquivos (Pendente)**
+- **Emissão de CF-e-SAT:** (DEV)
+- **Emissão de NF-e e NFC-e:** (Pendente)
+- **Manifestação de NF-e's** (Pendente)
+- **Gerar PDF's e XML's** (Pendente)
+- **Enviar arquivos Fiscais via Email** (Pendente)
+- **Sincronizar arquivos** (Pendente)
