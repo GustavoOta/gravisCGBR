@@ -1,10 +1,8 @@
 # Ignorar tudo dentro do diretório target
-/target/*
-
-# Exceto arquivos binários específicos
+/target/debug/*
 !/target/debug/gravisCgbr.exe
-!/target/release/gravisCgbr.exe
-
+/target/release/*
+!/target/release/gravis_cgbr.exe
 # Arquivos lock
 cargo.lock
 
@@ -20,6 +18,8 @@ config.json
 .vscode/
 *.swp
 *~
+/target/.rustc_info.json
+/target/CACHEDIR.TAG
 
 # Arquivos de sistema específicos do MacOS
 .DS_Store
