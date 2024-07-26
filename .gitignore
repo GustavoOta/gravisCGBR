@@ -1,11 +1,16 @@
-# Ignorar tudo dentro do diretório target
+# Ignorar este arquivo
+.gitignore
+
+# Ignorar arquivo de template
+cgbr-400x400px.psd
+
+# Ignorar em binarios
 /target/debug/*
 !/target/debug/gravisCgbr.exe
 /target/release/*
 !/target/release/gravis_cgbr.exe
 # Arquivos lock
-cargo.lock
-
+Cargo.lock
 
 # Arquivos de log
 **/*.log
