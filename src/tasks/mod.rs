@@ -10,6 +10,10 @@ pub async fn init() {
     // ******** VERIFICAÇÃO DE ESTRUTURA DE DIRETORIOS ********* //
     // mkdirs
 
+    // ******** VERIFICAÇÃO DE ARQUIVOS ********* //
+    // check files
+    crate::config::check_file().await;
+
     // ********************* TASKS ********************* //
     let _task_name = tokio::spawn(async move {
         loop {

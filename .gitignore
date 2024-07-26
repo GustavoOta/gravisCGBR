@@ -1,5 +1,12 @@
-# Arquivos compilados
-/target/
+# Ignorar tudo dentro do diretório target
+/target/*
+
+# Exceto arquivos sem extensão (binários)
+!/target/*.exe
+
+# Arquivos lock
+cargo.lock
+
 
 # Arquivos de log
 **/*.log

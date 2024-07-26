@@ -5,21 +5,21 @@
 use actix_cors::Cors;
 use actix_web::{App, HttpServer};
 
-const SERVER_HOST: &str = "0.0.0.0";
-const SERVER_PORT: u16 = 3030;
-const VERSION: &str = env!("CARGO_PKG_VERSION");
-
-pub mod home;
-pub mod migrations;
-pub mod tasks;
-pub mod tests;
-
-// adicionar modulos que estao no arquivo mod.rs
+mod config;
+mod home;
+mod migrations;
+mod sat;
+mod tasks;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    println!("Server at http://{}:{}/", SERVER_HOST, SERVER_PORT);
     tasks::init().await;
+    println!(
+        "Server at http://{}:{}/",
+        crate::config::server_host(),
+        crate::config::server_port()
+    );
+
     HttpServer::new(|| {
         App::new()
             .wrap(
@@ -29,9 +29,12 @@ async fn main() -> std::io::Result<()> {
                     .allow_any_header()
                     .send_wildcard(),
             )
+            .service(config::index)
             .service(home::index)
+            .service(sat::consultar_sat_index)
+            .service(sat::consultar_status_operacional_index)
     })
-    .bind((SERVER_HOST, SERVER_PORT))?
+    .bind((crate::config::server_host(), crate::config::server_port()))?
     .run()
     .await
 }
