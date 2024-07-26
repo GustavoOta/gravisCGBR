@@ -7,8 +7,8 @@
     "sat": {
         "cnpj": "11111111111111",
         "sign_ac": "AC_SIGNATURE",
-        "codigo_ativacao": "00000000",
-        "dll_path": "C:/SATDLL.DLL",
+        "codigo_ativacao": "10868122",
+        "dll_path": "C:/gravis/engine/gravisbridge/sat/ControlID/win64/libsatid.dll",
         "dll_load_enviroment": "win64",
         "dll_convention": "stdcall",
         "dll_maker": "DEMO"

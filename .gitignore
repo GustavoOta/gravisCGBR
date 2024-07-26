@@ -2,7 +2,7 @@
 /target/*
 
 # Exceto arquivos sem extensão (binários)
-!/target/*.exe
+!/target/debug/gravisCgbr.exe
 
 # Arquivos lock
 cargo.lock
@@ -11,8 +11,9 @@ cargo.lock
 # Arquivos de log
 **/*.log
 
-# Arquivos de ambiente (como .env)
+# Arquivos de ambiente e configurações(como .env)
 .env
+config.json
 
 # Arquivos de configuração do editor específicos do usuário
 .vscode/
