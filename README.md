@@ -22,7 +22,7 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
         "dll_maker": "DEMO"
     }
 }
-
+```
 ### Detalhes dos Campos
 
 #### server:
@@ -41,7 +41,6 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
 - **dll_convention**: A convenção de chamada da DLL. Exemplo: `"stdcall"`.
 - **dll_maker**: O fabricante da DLL. Exemplo: `"DEMO"`.
 
-```
 ## Endpoints
 
 ### Consultar Status do SAT
@@ -50,7 +49,16 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
 - **Método**: `GET`
 - **Descrição**: Este endpoint consulta o status do equipamento SAT.
 
-#### Exemplo de Requisição
-
-```http
-GET http://localhost:3030/sat/consultar_sat
+#### Exemplo de Resposta
+```json
+{
+    "error": 0,
+    "code": 0,
+    "msg": "Sucesso ao consultar equipamento SAT",
+    "data": {
+            "numero_sessao": 473295,
+            "cod_retorno": 8000,
+            "mensagem": "SAT em operação"
+            }
+}
+```
