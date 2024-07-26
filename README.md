@@ -3,7 +3,7 @@ API de comunicação com serviços do governo Brasileiro
 
 ## Configuração
 
-Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que esta no mesmo diretórios que o executável. Este arquivo deve conter os seguintes parâmetros:
+Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que esta no mesmo diretório que o executável, o executável cria o arquivo ao ser executado, ou crie manualmente. Este arquivo deve conter os seguintes parâmetros:
 
 ```json
 {
@@ -22,6 +22,7 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
         "dll_maker": "DEMO"
     }
 }
+```
 ### Detalhes dos Campos
 
 #### server:
