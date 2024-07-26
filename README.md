@@ -22,7 +22,7 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
         "dll_maker": "DEMO"
     }
 }
-```
+
 ### Detalhes dos Campos
 
 #### server:
@@ -41,6 +41,7 @@ Antes de iniciar a aplicação, você deve editar o arquivo `config.json` que es
 - **dll_convention**: A convenção de chamada da DLL. Exemplo: `"stdcall"`.
 - **dll_maker**: O fabricante da DLL. Exemplo: `"DEMO"`.
 
+```
 ## Endpoints
 
 ### Consultar Status do SAT
